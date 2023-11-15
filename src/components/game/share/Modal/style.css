@@ -1,0 +1,15 @@
+@keyframes zoomOut {
+  from { background-size: 0%; }
+  to { background-size: 100%; }
+}
+  
+.winner-modal .winner-modal__img {
+  background-image: url('./confetti.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  animation: zoomOut ease 700ms;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+  

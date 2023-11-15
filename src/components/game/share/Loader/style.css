@@ -1,0 +1,93 @@
+.loader .loader__container {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  .loader .loader__item {
+    height: calc(65px / 7.5);
+    width: calc(65px / 7.5);
+    animation-duration: 2000ms;
+    top: calc(65px / 2.3077);
+    left: calc(65px / 2.3077);
+    background-color: #ccc;
+    position: absolute;
+    animation-iteration-count: infinite;
+  }
+  .loader .loader__item:nth-child(2n + 0) {
+    margin-right: 0;
+  }
+  @keyframes spinner-1 {
+    50% { transform: translate(-325%, -325%) }
+  }
+  .loader .loader__item-1 {
+    animation-name: spinner-1;
+    animation-delay: calc(100ms * 1);
+  }
+  @keyframes spinner-2 {
+    50% { transform: translate(0, -325%) }
+  }
+  .loader .loader__item-2 {
+    animation-name: spinner-2;
+    animation-delay: calc(100ms * 2);
+  }
+  @keyframes spinner-3 {
+    50% { transform: translate(325%, -325%) }
+  }
+  .loader .loader__item-3 {
+    animation-name: spinner-3;
+    animation-delay: calc(100ms * 3);
+  }
+  @keyframes spinner-4 {
+    50% { transform: translate(325%, 0) }
+  }
+  .loader .loader__item-4 {
+    animation-name: spinner-4;
+    animation-delay: calc(100ms * 4);
+  }
+  @keyframes spinner-5 {
+    50% { transform: translate(325%, 325%) }
+  }
+  .loader .loader__item-5 {
+    animation-name: spinner-5;
+    animation-delay: calc(100ms * 5);
+  }
+  @keyframes spinner-6 {
+    50% { transform: translate(0, 325%) }
+  }
+  .loader .loader__item-6 {
+    animation-name: spinner-6;
+    animation-delay: calc(100ms * 6);
+  }
+  @keyframes spinner-7 {
+    50% { transform: translate(-325%, 325%) }
+  }
+  .loader .loader__item-7 {
+    animation-name: spinner-7;
+    animation-delay: calc(100ms * 7);
+  }
+  @keyframes spinner-8 {
+    50% { transform: translate(-325%, 0) }
+  }
+  .loader .loader__item-8 {
+    animation-name: spinner-8;
+    animation-delay: calc(100ms * 8);
+  }
+  @keyframes big {
+    50% { transform: scale(0.5) }
+  }
+  .loader .loader__item-big {
+    height: calc(65px / 3);
+    width: calc(65px / 3);
+    top: calc(65px / 3);
+    left: calc(65px / 3);
+    background-color: #ccc;
+    animation: big 2s infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+  }
+  
